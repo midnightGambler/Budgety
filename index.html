@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budgety</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class="bcgrnd">
+		<div class="topMenu">
+			<h2>Available Budget in <span>September</span> <span>2018</span>:</h2>
+			<h1 class="budget">+ 0.00</h1>
+			<div class="income">
+				<p>
+					INCOME
+				</p>
+				<p class="amount">+0.00</p>
+			</div>
+			<div class="expenses">
+				<p>
+					EXPENSES	
+				</p>
+				<div class="expenses_wrap">
+					<p class="amount">-0.00</p>
+					<p class="exp_per">0%</p>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="interface">
+		<div class="wrap">
+			<input class="name" type="text" name="name of operation" placeholder="Add description...">
+			<input class="value" type="text" name="value" placeholder="Value">
+			<select class="operation">
+				<option value="inc" selected="selected">+</option>
+				<option value="exp">-</option>
+			</select>
+			<button class="enter">
+				<img class="icon" src="img/enter2.png">
+			</button>
+		</div>
+	</div>
+
+
+	<div class="bottom">
+
+
+		<div class="income_list list">
+			<h2>INCOME</h2>
+			
+			<!-- <div id="inc_%id%" class="item">
+				<h3 class="inc_des">%description%</h3>
+				<div class="value_wrap">	
+					<span class="inc_val">+%value%</span>
+					<button class="delete">
+						<img src="img/delete.png">
+					</button>
+				</div>
+			</div> -->
+		
+		</div>
+
+
+		<div class="expenses_list list">
+			<h2>EXPENSES</h2>
+
+			<!-- <div id="exp_%id%" class="item">
+				<h3 class="exp_des">%description%</h3>
+				<div class="value_wrap">
+					<span class="exp_val">-%value%</span>
+					<span class="percent">21%</span>
+					<button class="delete"><img src="img/delete.png"></button>
+				</div>
+			</div>
+ -->
+		</div>
+
+
+	</div>
+
+
+</body>
+<script type="text/javascript" src="js.js"></script>
+</html>

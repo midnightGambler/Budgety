@@ -1,0 +1,218 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', 'Montserrat', sans-serif;
+	color: #fff;
+	font-weight: 300;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+	outline: none;
+}
+
+option {
+	color: #646464;	
+}
+
+.bcgrnd {
+	width: 100vw;
+	height: 40vh;
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.topMenu {
+	max-width: 70vmax;
+	min-height: 275px;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 100%;
+}
+
+.budget {
+	font-size: 50px;
+}
+
+.topMenu h2 {
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.income, .expenses {
+	width: 35%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.income {
+	margin-top: 25px;
+	background-color: rgba(113, 145, 178, 0.68);
+}
+
+.expenses {
+	margin-bottom: 25px;
+	background-color: rgba(203, 106, 106, 0.68);
+}
+.expenses_wrap {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 50px;
+}
+
+.exp_per {
+	font-size: 11px;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 3px 6px;
+	margin-left: 10px;
+}
+
+.interface {
+	height: 8vh;
+	width: 100vw;
+	background-color: #f2f4f4;
+}
+
+.operation, .name, .value, .enter {
+	margin: 5px;
+	height: 35px;
+	border: 1px solid #bcbcbc;
+	border-radius: 5px;
+	color: #646464;
+	font-weight: 400;
+}
+
+.operation:focus, .name:focus, .value:focus, .enter:focus {
+	border: 1.5px solid rgba(113, 145, 178, 0.68);
+}
+
+.wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50vw;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.value {
+	width: 50px;
+	padding: 0 10px;
+}
+
+.icon{
+	width: 100%;
+}
+
+.name {
+	width: 50%;
+	padding: 0 2vw;
+}
+.enter {
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #fff;
+	width: 35px;
+	flex-shrink: 0;
+}
+
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 2vh auto 0;
+	width: 70vw;
+	text-align: left;
+	flex-wrap: wrap;
+}
+
+.list {
+	flex-basis: 37%;
+	height: 50vh;
+	flex-shrink: 0;
+	margin: 10px;
+}
+
+.list h2 {
+	font-weight: 400;
+	border-bottom: 1px solid #bcbcbc;
+	font-size: 20px;
+}
+
+.income_list h2, .income_list span {
+	color: #3d87ff;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.expenses_list h2, .expenses_list span {
+	color: #ff3d5a;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #bcbcbc;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 0 5px;
+}
+
+.item h3 {
+	color: #1a283d;
+	padding: 10px;
+	font-size: 15px;
+}
+
+.value_wrap {
+	display: flex;
+	min-width: 50px;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.delete {
+	width: 0px;
+	height: 30px;
+	background-color: transparent;
+	border: 1px solid #bcbcbc;
+	border-radius: 50%;
+	cursor: pointer;
+	visibility: hidden;
+  	transition: visibility 0s, opacity 0.3s linear;
+}
+
+.value_wrap .percent {
+	background-color: rgba(203, 106, 106, 0.68);
+	color: #fff;
+	padding: 6px;
+	font-size: 13px;
+	margin: 0 10px;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+.delete img {
+	width: 100%;
+}
+
+.item:hover .delete {
+	width: 30px;
+	visibility: visible;
+}
